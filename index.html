@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vue Dischi</title>
+		<!-- Axioss --->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+		<!-- Vue -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="root">
+			<div class="container">
+					<ul>
+						<li v-for='song in albums'>
+							<img :src="song.poster" alt="">
+							<h1>{{ song.title }}</h1>
+							<h2>{{ song.author }}</h2>
+							<h4>{{ song.year }}</h4>
+					 </li>
+					</ul>
+			</div>
+		</div>
+
+
+		<!-- Custom JS -->
+		<script src="js/script.js" charset="utf-8"></script>
+	</body>
+</html>
