@@ -13,15 +13,13 @@
 	</head>
 	<body>
 		<div id="root">
-			<div class="container">
-					<ul>
-						<li v-for='song in albums'>
-							<img :src="song.poster" alt="">
+			<div class="flex-container">
+						<div class="scheda" v-for='song in albums'>
+							<img :src="song.poster" alt="Immagine Copertina">
 							<h1>{{ song.title }}</h1>
 							<h2>{{ song.author }}</h2>
 							<h4>{{ song.year }}</h4>
-					 </li>
-					</ul>
+					 </div>
 			</div>
 		</div>
 
